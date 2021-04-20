@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entendendo o uso de constante</title>
+</head>
+<body>
+  <script>
+    //não pode redeclarar ou redefinir valor para a constante no MESMO ESCOPO
+    const age = 30;
+    //const age = 31;  //erro por tentar redeclarar
+    //age = 31;   //erro por tentar redefinir valor
+
+    if(1 == 1) {
+      //pessima prática, ficar redeclarando variáveis/constantes em escopos diferentes
+      const age = 25;
+      console.log(age); //vai imprimir 25
+    }
+
+    //não posso redeclarar ou redefinir valor, mas posso permutar valores do objeto
+    const list = ['banana', 'goiaba'];
+    list.push(15);
+    console.log(list);
+
+    const person = {
+      name: 'Marcos',
+      age: 30
+    }
+    person.name = 'Marcos Mendonça';
+    console.log(person);
+
+  </script>
+  
+</body>
+</html>

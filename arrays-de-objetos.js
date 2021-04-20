@@ -23,3 +23,8 @@ for (var person of list) {
   console.log(person);
 }
 
+//uma lista pode ter objetos de tipos diferentes
+var list2 = ['banana', 'goiaba', 20, true];
+list2.push(30);
+console.log(list2);
+

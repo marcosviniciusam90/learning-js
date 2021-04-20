@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entendendo o uso do let</title>
+</head>
+<body>
+  <script>
+    //é uma versão melhorada do var
+    //não pode redeclarar, mas posso redefinir valor (delimitada por ESCOPO)
+    let age = 25;
+    //let age = 31;   //erro, não posso redeclarar
+    age = 30;
+
+    console.log(age);
+
+    if (1 == 1) {
+      //não é uma boa prática redeclarar variáveis
+      let age = 40; //posso redeclarar pelo fato de estar em outro escopo
+      console.log(age);
+    }
+  </script>
+  
+</body>
+</html>
