@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Function Call e Function Apply</title>
+</head>
+<body>
+  <script>
+
+    const me = {name: 'Marcos'};
+
+    function sum(a, b) {
+      console.log(this);
+      return a + b;      
+    }
+
+    //até mesmo as funções são consideradas objetos (só não é objeto null e undefined)
+    //com function call e apply podemos executar uma função num contexto específico (1o parametro)
+    console.log(sum(1, 2));
+    console.log( sum.call(me, 1, 2) );
+    console.log( sum.apply(me, [1,2]) );   //a diferença do call é q passamos um array e não args
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Criando funções com function</title>
+</head>
+<body>
+  <script>
+    function greet() {
+      console.log('Escopo atual'); 
+      console.log(this);      
+    }
+    greet();
+
+    const me = {
+      name: 'Marcos',
+      greet() {
+        console.log('Escopo objeto')
+        console.log(this);                
+      }
+    }
+    me.greet();
+
+  </script>
+  
+</body>
+</html>
