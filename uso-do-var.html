@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entendendo o uso do var</title>
+</head>
+<body>
+  <script>
+    var age = 21;
+    var age = 22; //redeclarando
+    console.log('Age: ' + age);
+
+    //o uso do var NÃO é delimitado por bloco
+    if(1 == 1) {
+      var teste2 = 30;
+    }
+    console.log(teste2);
+
+    //o uso do var é delimitado por função
+    function funcao() {
+      var teste = 25;
+    }
+    console.log(teste); //vai dar erro, pois a variável foi declarada dentro de uma função
+    
+
+
+  </script>
+  
+</body>
+</html>
