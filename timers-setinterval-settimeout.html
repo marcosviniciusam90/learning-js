@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timers</title>
+</head>
+<body>
+  <script>
+
+    //o setInterval executa o bloco N vezes (a cada X ms)
+    const interval = setInterval(() => {
+      console.log('Executou interval');      
+    }, 2000); //2 segundos
+
+    //o setTimeout executa uma única vez no tempo definido
+    setTimeout(() => {
+      clearInterval(interval); //poderia usar o clearTimeout() para parar execução de outro Timeout 
+      console.log('Executou timeout! Parou execução do interval');    
+    }, 11000); //11 segundos
+    
+  </script>
+  
+</body>
+</html>

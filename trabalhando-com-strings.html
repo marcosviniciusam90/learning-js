@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trabalhando com strings</title>
+</head>
+<body>
+  <script>
+
+    const nome = 'Marcos';
+    const idade = 30;
+
+    const sentence = 'Olá, meu nome é ' + nome + ' e eu tenho ' + idade + ' anos.'
+
+    //template string (usa crase)
+    const sentence2 = `Olá, meu nome é ${nome} e eu tenho ${idade} anos.`
+
+    console.log (sentence);
+    console.log(sentence2);
+
+    //usando template string, mantém identação
+    const html = `
+      <ul>
+        <li>
+          ${nome}
+        </li>
+        <li>
+          ${idade}
+        </li>
+      </ul>
+    `;
+
+    console.log(html);
+
+  </script>
+  
+</body>
+</html>
